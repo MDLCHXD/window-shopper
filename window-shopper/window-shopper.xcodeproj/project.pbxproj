@@ -8,12 +8,15 @@
 
 /* Begin PBXBuildFile section */
 		DBAAE4E91FA3E994009531EA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBAAE4E81FA3E994009531EA /* AppDelegate.swift */; };
-		DBAAE4EB1FA3E994009531EA /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBAAE4EA1FA3E994009531EA /* ViewController.swift */; };
+		DBAAE4EB1FA3E994009531EA /* MainVc.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBAAE4EA1FA3E994009531EA /* MainVc.swift */; };
 		DBAAE4EE1FA3E994009531EA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DBAAE4EC1FA3E994009531EA /* Main.storyboard */; };
 		DBAAE4F01FA3E994009531EA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DBAAE4EF1FA3E994009531EA /* Assets.xcassets */; };
 		DBAAE4F31FA3E994009531EA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DBAAE4F11FA3E994009531EA /* LaunchScreen.storyboard */; };
 		DBAAE4FE1FA3E994009531EA /* window_shopperTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBAAE4FD1FA3E994009531EA /* window_shopperTests.swift */; };
 		DBAAE5091FA3E994009531EA /* window_shopperUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBAAE5081FA3E994009531EA /* window_shopperUITests.swift */; };
+		DBAAE5191FA3ECA1009531EA /* CurrencyTxtField.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBAAE5181FA3ECA1009531EA /* CurrencyTxtField.swift */; };
+		DBAAE51C1FA7A8AA009531EA /* wage.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBAAE51B1FA7A8AA009531EA /* wage.swift */; };
+		DBAAE51D1FA7A9FE009531EA /* wage.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBAAE51B1FA7A8AA009531EA /* wage.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,7 +39,7 @@
 /* Begin PBXFileReference section */
 		DBAAE4E51FA3E994009531EA /* window-shopper.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "window-shopper.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		DBAAE4E81FA3E994009531EA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		DBAAE4EA1FA3E994009531EA /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		DBAAE4EA1FA3E994009531EA /* MainVc.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainVc.swift; sourceTree = "<group>"; };
 		DBAAE4ED1FA3E994009531EA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		DBAAE4EF1FA3E994009531EA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DBAAE4F21FA3E994009531EA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -47,6 +50,8 @@
 		DBAAE5041FA3E994009531EA /* window-shopperUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "window-shopperUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		DBAAE5081FA3E994009531EA /* window_shopperUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = window_shopperUITests.swift; sourceTree = "<group>"; };
 		DBAAE50A1FA3E994009531EA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DBAAE5181FA3ECA1009531EA /* CurrencyTxtField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrencyTxtField.swift; sourceTree = "<group>"; };
+		DBAAE51B1FA7A8AA009531EA /* wage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = wage.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,8 +102,10 @@
 		DBAAE4E71FA3E994009531EA /* window-shopper */ = {
 			isa = PBXGroup;
 			children = (
+				DBAAE51A1FA7A892009531EA /* Model */,
+				DBAAE5171FA3EC74009531EA /* Views */,
+				DBAAE5161FA3EB6D009531EA /* Controller */,
 				DBAAE4E81FA3E994009531EA /* AppDelegate.swift */,
-				DBAAE4EA1FA3E994009531EA /* ViewController.swift */,
 				DBAAE4EC1FA3E994009531EA /* Main.storyboard */,
 				DBAAE4EF1FA3E994009531EA /* Assets.xcassets */,
 				DBAAE4F11FA3E994009531EA /* LaunchScreen.storyboard */,
@@ -123,6 +130,30 @@
 				DBAAE50A1FA3E994009531EA /* Info.plist */,
 			);
 			path = "window-shopperUITests";
+			sourceTree = "<group>";
+		};
+		DBAAE5161FA3EB6D009531EA /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				DBAAE4EA1FA3E994009531EA /* MainVc.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		DBAAE5171FA3EC74009531EA /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				DBAAE5181FA3ECA1009531EA /* CurrencyTxtField.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		DBAAE51A1FA7A892009531EA /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				DBAAE51B1FA7A8AA009531EA /* wage.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -259,7 +290,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DBAAE4EB1FA3E994009531EA /* ViewController.swift in Sources */,
+				DBAAE5191FA3ECA1009531EA /* CurrencyTxtField.swift in Sources */,
+				DBAAE51C1FA7A8AA009531EA /* wage.swift in Sources */,
+				DBAAE4EB1FA3E994009531EA /* MainVc.swift in Sources */,
 				DBAAE4E91FA3E994009531EA /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -269,6 +302,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				DBAAE4FE1FA3E994009531EA /* window_shopperTests.swift in Sources */,
+				DBAAE51D1FA7A9FE009531EA /* wage.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -427,6 +461,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = MZ5A7S8SAG;
 				INFOPLIST_FILE = "window-shopper/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "co.SensesConcepts.window-shopper";
@@ -441,6 +476,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = MZ5A7S8SAG;
 				INFOPLIST_FILE = "window-shopper/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "co.SensesConcepts.window-shopper";
@@ -456,6 +492,7 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = MZ5A7S8SAG;
 				INFOPLIST_FILE = "window-shopperTests/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "co.SensesConcepts.window-shopperTests";
@@ -472,6 +509,7 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = MZ5A7S8SAG;
 				INFOPLIST_FILE = "window-shopperTests/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "co.SensesConcepts.window-shopperTests";
@@ -487,6 +525,7 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = MZ5A7S8SAG;
 				INFOPLIST_FILE = "window-shopperUITests/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "co.SensesConcepts.window-shopperUITests";
@@ -502,6 +541,7 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = MZ5A7S8SAG;
 				INFOPLIST_FILE = "window-shopperUITests/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "co.SensesConcepts.window-shopperUITests";
